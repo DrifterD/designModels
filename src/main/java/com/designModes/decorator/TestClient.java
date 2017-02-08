@@ -1,14 +1,14 @@
 /*
  * Copyright (C), 2014-2017, 运策物流
- * FileName: BZCar.java
+ * FileName: TestClient.java
  * Author:   yhx
- * Date:     2017年2月7日 下午2:22:17
+ * Date:     2017年2月8日 下午4:04:21
  * Description: //模块目的、功能描述
  * History: //修改记录
  * <author>      <time>      <version>    <desc>
  * 修改人姓名             修改时间            版本号                  描述
  */
-package com.designModes.builders;
+package com.designModes.decorator;
 
 /**
  * 〈一句话功能简述〉<br>
@@ -18,25 +18,21 @@ package com.designModes.builders;
  * @see [相关类/方法]（可选）
  * @since [产品/模块版本] （可选）
  */
-public class BMWCar extends CarModel {
+public class TestClient {
 
-	@Override
-	public void start() {
-		System.out.println("宝马  启动........");
-
+	/**
+	 * 功能描述: <br>
+	 * 〈功能详细描述〉
+	 *
+	 * @param args
+	 * @see [相关类/方法](可选)
+	 * @since [产品/模块版本](可选)
+	 */
+	public static void main(String[] args) {
+		Person p=new Man();
+		p=new BatMan(p);
+		p=new SuperMan(p);
+		p.wearClose();
 	}
-
-	@Override
-	public void stop() {
-		System.out.println("宝马停止........");
-
-	}
-
-	@Override
-	public void enginBoom() {
-		System.out.println("宝马发动引擎........");
-
-	}
-
 
 }

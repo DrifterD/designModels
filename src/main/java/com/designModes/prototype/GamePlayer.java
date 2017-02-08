@@ -1,14 +1,16 @@
 /*
  * Copyright (C), 2014-2017, 运策物流
- * FileName: BZCar.java
+ * FileName: GamePlayer.java
  * Author:   yhx
- * Date:     2017年2月7日 下午2:22:17
+ * Date:     2017年2月8日 下午2:45:32
  * Description: //模块目的、功能描述
  * History: //修改记录
  * <author>      <time>      <version>    <desc>
  * 修改人姓名             修改时间            版本号                  描述
  */
-package com.designModes.builders;
+package com.designModes.prototype;
+
+import java.util.Date;
 
 /**
  * 〈一句话功能简述〉<br>
@@ -18,25 +20,18 @@ package com.designModes.builders;
  * @see [相关类/方法]（可选）
  * @since [产品/模块版本] （可选）
  */
-public class BMWCar extends CarModel {
+public class GamePlayer implements IGamePlay {
 
-	@Override
-	public void start() {
-		System.out.println("宝马  启动........");
+	public void login(String name, String password) {
+		System.out.print(name+" has login:"+new Date());
+	}
+
+	public void kissBoss() {
+		System.out.print("kiss boss");
 
 	}
 
-	@Override
-	public void stop() {
-		System.out.println("宝马停止........");
-
+	public void upgrade() {
+		System.out.print("upgrade");
 	}
-
-	@Override
-	public void enginBoom() {
-		System.out.println("宝马发动引擎........");
-
-	}
-
-
 }
