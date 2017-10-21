@@ -26,13 +26,8 @@ public abstract class Flyweight {
 	 * @return the innerStatus
 	 */
 	public String getInnerStatus() {
-		return innerStatus;
+		return innerStatus ;
 	}
-
-	public Flyweight(String innerStatus){
-		this.innerStatus=innerStatus;
-	}
-
 
 	public abstract void operation(String outStatus);
 }

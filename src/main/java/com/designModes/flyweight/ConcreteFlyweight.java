@@ -20,8 +20,14 @@ package com.designModes.flyweight;
  */
 public class ConcreteFlyweight extends Flyweight{
 
-	public ConcreteFlyweight(String innerStatus){
-		super(innerStatus);
+	private final String outStatus;	
+	
+	public String getOutStatus() {
+		return outStatus;
+	}
+
+	public ConcreteFlyweight(String outStatus){		
+		this.outStatus=outStatus; 		
 	}
 
 	@Override
