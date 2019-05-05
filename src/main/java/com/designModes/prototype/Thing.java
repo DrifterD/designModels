@@ -89,11 +89,11 @@ public class Thing implements Cloneable {
 		t.setName("protype");
 		t.add("1");
 		t.add("2");
-
+		System.out.println("t="+t);
 		Thing tcopy=t.clone();
 		tcopy.setName("copy");
 		tcopy.add("a");
-
+		System.out.println("t="+t+", copy="+tcopy);
 		//操作原型list
 		t.remove("1");
 

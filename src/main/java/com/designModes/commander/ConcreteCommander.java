@@ -22,8 +22,8 @@ public class ConcreteCommander implements ICommander {
 
 	private IReceiver receiver;
 
-	public ConcreteCommander(IReceiver receiver){
-		this.receiver=receiver;
+	public ConcreteCommander(){
+		this.receiver=new ConcreteReceiver();
 	}
 
 	public void execute() {
