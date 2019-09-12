@@ -21,7 +21,7 @@ package org.yhx.design.mode.commander;
  * 1.类间解耦
  * 2.可扩展性。command 可以扩展无限个命令，但是这也是个缺点，导致冗余类
  *
- * @author yanghanxiu
+ * @author bigmoon
  * @see [相关类/方法]（可选）
  * @since [产品/模块版本] （可选）
  */
