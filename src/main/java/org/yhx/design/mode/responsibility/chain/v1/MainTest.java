@@ -6,7 +6,7 @@
  * Date:     19-9-12 下午4:50
  * Description: designModels
  */
-package org.yhx.design.mode.responsibility.chain;
+package org.yhx.design.mode.responsibility.chain.v1;
 
 /**
  *  责任链设计模式：

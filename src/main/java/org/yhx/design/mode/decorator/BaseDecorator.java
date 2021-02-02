@@ -15,15 +15,17 @@ package org.yhx.design.mode.decorator;
  * @see [相关类/方法]（可选）
  * @since [产品/模块版本] （可选）
  */
-public class BaseDecorator implements Person {
+public abstract class BaseDecorator implements Person {
 
-	Person person=null;
+	Person person;
 
 	public BaseDecorator(Person person){
 		this.person=person;
 	}
-
+//
+	@Override
 	public void wearClose() {
-		//this.person.wearClose();
+		this.person.wearClose();
+
 	}
 }

@@ -17,9 +17,9 @@ package org.yhx.design.mode.decorator;
  */
 public class Man implements Person {
 
+	@Override
 	public void wearClose() {
 		System.out.println("啥也没穿");
-
 	}
 
 

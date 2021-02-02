@@ -17,5 +17,5 @@ package org.yhx.design.mode.decorator;
  */
 public interface Person {
 
-	public void wearClose();
+	void wearClose();
 }

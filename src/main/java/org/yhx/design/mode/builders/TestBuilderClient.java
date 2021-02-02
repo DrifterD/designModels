@@ -31,8 +31,8 @@ public class TestBuilderClient {
 	public static void main(String[] args) {
 
 		List<String> sequence=new ArrayList<String>();
-		sequence.add("stop");
 		sequence.add("start");
+		sequence.add("stop");
 
 		MBWBuilder builder=new MBWBuilder();
 		builder.setSequence(sequence);
